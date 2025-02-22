@@ -1,0 +1,19 @@
+.navbar-custom {
+  background-color: #472343; 
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+
+/* Aplicar efecto hover para los enlaces de la barra de navegación */
+.navbar-nav .nav-link {
+  transition: transform 0.3s ease, color 0.3s ease; /* Suavizar la transición */
+}
+
+/* Efecto cuando el ratón pasa sobre los enlaces */
+.navbar-nav .nav-link:hover {
+  transform: scale(1.3); /* Ampliar el texto del enlace */
+  color: #ff69b4; /* Cambiar el color del texto a rosa al pasar el ratón */
+}

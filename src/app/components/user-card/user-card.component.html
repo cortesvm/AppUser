@@ -1,0 +1,10 @@
+    <div class="d-flex flex-wrap justify-content-start" style="gap: 30px;">
+      <div class="card shadow-lg hover-card" style="width: 18rem; min-height: 350px;">
+        <img class="card-img-top rounded-circle shadow-lg p-2" [src]="miUser.image" style="width: 150px; margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+        <div class="card-body">
+          <p class="card-text">{{miUser.first_name}} {{miUser.last_name}}</p>
+          <app-button [_id]="miUser._id" [parent]="'card'"></app-button>
+        </div>
+      </div>
+    </div>
+    

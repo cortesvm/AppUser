@@ -1,0 +1,21 @@
+<div class="d-flex flex-column min-vh-100">
+    <!-- Contenido principal -->
+    <section class="container mt-3 flex-grow-1">
+      <div class="card shadow p-3">
+        <div class="row">
+          <figure class="col-12 col-md-3">
+            <img class="img-fluid rounded-circle shadow-lg p-2" [src]="miUser.image" alt="Imagen de {{miUser.first_name}} {{miUser.last_name}}">
+          </figure>
+          <div class="col-12 col-md-9">
+            <h2>{{ miUser.first_name }}</h2>
+            <h2>{{ miUser.last_name }}</h2>
+            <hr>
+            <p><b>Nombre Usuario:</b> {{ miUser.username }}</p>
+            <p><b>Email:</b> {{ miUser.email }}</p>
+            <app-button [parent]="'view'" [_id]="miUser._id"></app-button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+

@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.no-style-btn {
+    background-color: transparent; 
+    border: none; 
+    color: inherit; 
+    padding: 0; 
+    font-size: 1rem; 
+  }
+
+  .no-style-btn i {
+    font-size: 2rem; 
+  }
+  
+
+  .no-style-btn span {
+    font-size: 0.8rem; 
+    margin-top: 5px;
+  }
+  
+
+  /* Establecer transición para la animación */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de ampliación y sombra cuando se pasa el ratón sobre la tarjeta */
+.hover-card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño en un 5% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra para dar el efecto de profundidad */
+}
+
